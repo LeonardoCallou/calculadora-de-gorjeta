@@ -75,6 +75,25 @@ main{
 .gorjeta div{
     margin-top: 1rem;
 
+
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    color: var(--white);
+    background-color: var(--green-800);
+
+}
+
+.gorjeta #outra{
+    width: 100%;
 }
