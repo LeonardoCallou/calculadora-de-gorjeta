@@ -39,9 +39,11 @@
             </div>
 
             <div class="pessoas">
-                 <label for="pessoas">Quantidade de Pessoas</label>
-                 <p id="erro">Não pode ser zero</p>
-                <div class="input-box erro">
+                <div class="textos">
+                     <label for="pessoas">Quantidade de Pessoas</label>
+                     <p id="erro">Não pode ser zero</p>
+                </div>
+                <div class="input-box">
                     <img src="./images/icon-person.svg" alt="icone do cifrão">
                     <input type="number" name="pessoas" id="pessoas" placeholder="0">
             
@@ -50,13 +52,14 @@
     </section>
 
     <section class="resultados">
-        <div class="gorjeta-total">
+        <div>
+            <div class="gorjeta-total">
             <p>
                 <strong>Gorjeta</strong> <br>
                 /pessoa
             </p>
 
-            <strong>$ 0.00</strong>
+            <strong>R$ 0.00</strong>
         </div>
 
         <div class="total">
@@ -65,7 +68,8 @@
                 /pessoa
             </p>
 
-            <strong>$ 0.00</strong>
+            <strong>R$ 0.00</strong>
+        </div>
         </div>
 
         <button>Limpar</button>
