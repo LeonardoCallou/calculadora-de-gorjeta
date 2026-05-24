@@ -79,7 +79,7 @@ function limpar() {
 
     pessoasInput.value = ""
 
-    document.querySelector(".gorgeta-total > strong").innerHTML = "R$ 0.00"
+    document.querySelector(".gorjeta-total > strong").innerHTML = "R$ 0.00"
     document.querySelector(".total > strong").innerHTML = "R$ 0.00"
 
     conta = 0
