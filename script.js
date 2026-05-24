@@ -10,7 +10,7 @@ conta = Number(evento.target.value)
 }
 
 const pessoasInput = document.querySelector("#pessoas")
-pessoasInput.addEventListener("imput", receberQuantidadedePessoas)
+pessoasInput.addEventListener("input", receberQuantidadedePessoas)
 
 function receberQuantidadedePessoas(evento){
             const paragrafoErro = document.querySelector(".pessoas #erro")
@@ -28,19 +28,17 @@ function receberQuantidadedePessoas(evento){
 
 const botoesGorjeta = document.querySelectorAll(".gorjeta input[type='button']")
 botoesGorjeta.forEach(botao =>{
-    botao.addEventListener("click",)
+    botao.addEventListener("click", receberPorcentagemBotao)
 })
 
-function receberPorcentagem(evento){
+function receberPorcentagemBotao(evento) {
+    botoesGorjeta.forEach(botao =>{
+            botao.classList.remove("botao-ativo")
 
-    //porcentagem = Number(evento.target.value) / 100
+        if(botao.value === evento.target.value) {
+            botao.classList.add("botao-ativo")
+        }
+    })
 
+    porcentagem = parseFloat(evento.target.value) / 100
 }
-
-
-
-escrevi essa linha só para dar o CustomElementRegistry, pois por algum motivo q eu desconheço, não estou conseguindo commitar
-escrevi essa linha só para dar o CustomElementRegistry, pois por algum motivo q eu desconheço, não estou conseguindo commitar
-escrevi essa linha só para dar o CustomElementRegistry, pois por algum motivo q eu desconheço, não estou conseguindo commitar
-escrevi essa linha só para dar o CustomElementRegistry, pois por algum motivo q eu desconheço, não estou conseguindo commitar
-escrevi essa linha só para dar o CustomElementRegistry, pois por algum motivo q eu desconheço, não estou conseguindo commitar
